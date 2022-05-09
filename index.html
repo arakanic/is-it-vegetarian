@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Your description goes here">
+		<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Is it Vegetarian?</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<fieldset class="input-group">
+				<label id="upc-label" for="upc">Enter UPC barcode below<span>(12-digit number)</span></label>
+				<input id="upc" name="upc" type="text" size="12" placeholder="011110038364" required>
+				<button type="submit" id="submit" onclick="enterInput()">Is it!?</button>
+			</fieldset>
+			<h1>Is it <span>Vegetarian</span>?</h1>
+			<h2 id="isIt"><a href="#table"></a></h2>
+		</header>
+		<main class="info">
+			<h3 id="product-name"></h3>
+			<img id="product-image" src="" alt="">
+			<table class="ingredients" id="table">
+				<tr>
+					<th>Ingredient</th>
+					<th>Vegetarian</th>
+				</tr>
+			</table>
+		</main>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

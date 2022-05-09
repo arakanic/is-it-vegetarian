@@ -1,0 +1,139 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  font-family: 'Archivo', sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  padding: 1%;
+}
+
+body * {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+  color: rgb(52, 53, 52)
+}
+
+h1 span {
+  font-weight: 900;
+  color: rgb(40, 70, 40)
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+h2 a {
+  color: rgb(52, 53, 52);
+  text-decoration: none;
+}
+
+h2 a:hover {
+  color: rgb(52, 53, 52);
+  text-decoration: underline;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 3px auto;
+  border: none;
+}
+
+.input-group * {
+  display: block;
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 5px;
+  margin: 7px;
+  border-radius: 5px;
+}
+
+#upc-label,
+#upc-label span {
+  padding: 0;
+  margin: 0;
+}
+
+#upc-label span {
+  display: block;
+}
+
+th {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+td {
+  font-size: 1.2rem;
+}
+
+/* img {
+  max-height: 400px;
+} */
+
+table {
+  visibility: hidden;
+  margin: 20px auto;
+}
+
+table, th, td {
+  border: 2px solid rgb(180, 199, 180);
+  border-radius: 3px;
+  padding: 3px;
+}
+
+.ing-unknown {
+  background-color: rgb(235, 238, 216)
+}
+
+.ing-nonvegetarian {
+  background-color: rgb(219, 152, 152)
+}
+
+.ing-vegetarian {
+  background-color: rgb(240, 255, 240)
+}
